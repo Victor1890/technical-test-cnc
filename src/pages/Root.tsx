@@ -17,7 +17,7 @@ const RootLayout = () => {
   return (
     <div data-theme={theme} className="app">
       <header className={classes.header}>
-        <h1>Where in the world?</h1>
+        <h1>Prueba Técnica</h1>
         <div className={classes.theme} onClick={themeHandler}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
