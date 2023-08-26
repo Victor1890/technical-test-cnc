@@ -1,0 +1,29 @@
+.list {
+  max-width: 85%;
+  margin-inline: auto;
+  list-style: none;
+  padding-bottom: 2rem;
+}
+
+.list > :last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 19.25rem) {
+  .list {
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .list {
+    width: 88%;
+    max-width: 88%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    column-gap: 3.2rem;
+    row-gap: 3rem;
+  }
+}

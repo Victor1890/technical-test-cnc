@@ -1,0 +1,58 @@
+.container {
+  width: 86%;
+  max-width: 23.5rem;
+  margin-inline: auto;
+  padding-bottom: 3rem;
+}
+
+.container > a {
+  display: block;
+  width: 7.4rem;
+  background-color: var(--header-color);
+  color: var(--text-color);
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 2.6rem;
+  margin-bottom: 3.6rem;
+  cursor: pointer;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container > a > svg {
+  color: var(--text-color);
+  height: 1.3rem;
+  width: 1.6rem;
+}
+
+.error {
+  font-weight: 800;
+  text-align: center;
+}
+
+@media (hover: hover) {
+  .container > a:hover {
+    background-color: var(--filter-hover);
+  }
+}
+
+@media (max-width: 22rem) {
+  .container > a {
+    margin-bottom: 2.6rem;
+  }
+}
+
+@media (min-width: 60rem) {
+  .container {
+    width: 88%;
+    max-width: 88%;
+  }
+  .container > a {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+}

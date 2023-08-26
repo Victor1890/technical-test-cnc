@@ -1,0 +1,73 @@
+.header {
+  background-color: var(--header-color);
+  padding: 2rem 1rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header > h1 {
+  color: var(--text-color);
+  font-size: 1.2rem;
+}
+
+.header > .theme {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.header svg {
+  height: 1.4rem;
+  width: 1.8rem;
+  color: var(--text-color);
+}
+
+.header svg path {
+  fill: var(--theme-icon);
+}
+
+.header span {
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+@media (hover: hover) {
+  .header > .theme:hover {
+    background-color: var(--filter-hover);
+  }
+}
+
+@media (max-width: 19.25rem) {
+  .header {
+    flex-direction: column;
+    padding: 1rem 1rem;
+  }
+  .header > .theme {
+    padding: 1rem 0.5rem 0rem 0.5rem;
+  }
+}
+
+@media (max-width: 22rem) {
+  .header > h1 {
+    font-size: 1rem;
+  }
+  .header span {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 56rem) {
+  .header {
+    margin-bottom: 3rem;
+    padding-inline: 6%;
+  }
+  .header > h1 {
+    font-size: 1.4rem;
+  }
+}
